@@ -109,7 +109,7 @@ def adbaitap():
         return render_template('admin.html', listbaitap = listbaitap)
 
 
-@app.route('/baitap/<baitap_id>', methods=['GET','POST'])
+@app.route('/baitap/<baitap_id>', methods=['GET', 'POST'])
 def baitap(baitap_id):
     baitap = BaiTap.objects().with_id(baitap_id)
 
